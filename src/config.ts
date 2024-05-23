@@ -43,7 +43,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Graychi',
-  bio: 'strings challenge.bin | grep -o "flag{[a-zA-Z0-9]*}" ',
+  bio: 'strings chall | grep "flag" ',
   links: [
     {
       name: 'Twitter',

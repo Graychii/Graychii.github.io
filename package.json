@@ -59,5 +59,6 @@
     "@types/mdast": "^4.0.3",
     "@types/sanitize-html": "^2.11.0",
     "stylus": "^0.63.0"
-  }
+  },
+  "packageManager": "pnpm@9.1.2"
 }

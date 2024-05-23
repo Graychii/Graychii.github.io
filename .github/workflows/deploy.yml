@@ -26,13 +26,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          version: '6.7.0' # Specify the pnpm version here
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-# Add a new step to specify the pnpm version
-  - name: Setup Node.js environment
-    uses: actions/setup-node@v2
-    with:
-      node-version: '14'
-      version: '6.7.0' # Specify the pnpm version here

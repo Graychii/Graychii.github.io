@@ -13,7 +13,7 @@ draft: false
 
 ## Sequel Dump
 
-![chall](/src/assets/images/chall.png)
+![chall](/assets/images/chall.png)
 
 In this challenge we were given a pcapng file capturing an attack that was aimed at a certain webserver, taking initial look at the pcap file we can see a bunch of sql queries made by sqlmap, without the present of anything else intresting
 

@@ -13,11 +13,11 @@ draft: false
 
 ## Sequel Dump
 
-![chall](images/chall.png)
+![chall](./chall.png)
 
 In this challenge we were given a pcapng file capturing an attack that was aimed at a certain webserver, taking initial look at the pcap file we can see a bunch of sql queries made by sqlmap, without the present of anything else intresting
 
-![wireshark](thm/wireshark.png)
+![wireshark](./wireshark.png)
 
 We notice that there are 2 types of responses for these requests : 
 
@@ -51,7 +51,7 @@ First idea that came to mind was that the correct chars would return a `The cryp
 
 After banging my head into a wall for bit I've realized that the only two params changing in those sql queries `6,1),3,1))>114` the `3` and `114` we know that the second params is the character ascii code, and the first one seems to signifiy it's order, however for each one of those there are multiple ones 
 
-![terminal](/src/assets/thm/term.png)
+![terminal](./term.png)
 
 After checking for any trends for these characters I decided to take the underscores as a reference, both of them appeared to be the last sql query made with that order
 
@@ -63,7 +63,7 @@ Remembering the phrase `<h2>Search Results:</h2><p><strong>Void:</strong> The cr
 
 Taking it to cyberchef and attempting to guess the right key 
 
-![cchef](/src/assets/thm/cchef.png)
+![cchef](./cchef.png)
 
 We get the following `Here't the flag: THM{r3tr12v1ng_th2_dump}`, it seems like the characters offset was either +1 or -1, looking at the flag it does not look quiete right thus simply replacing `2` with `3` gives us our final flag 
 

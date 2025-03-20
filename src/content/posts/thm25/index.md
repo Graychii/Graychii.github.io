@@ -13,11 +13,11 @@ draft: false
 
 ## Sequel Dump
 
-![chall](/assets/images/chall.png)
+![chall](images/chall.png)
 
 In this challenge we were given a pcapng file capturing an attack that was aimed at a certain webserver, taking initial look at the pcap file we can see a bunch of sql queries made by sqlmap, without the present of anything else intresting
 
-![wireshark](/src/assets/thm/wireshark.png)
+![wireshark](thm/wireshark.png)
 
 We notice that there are 2 types of responses for these requests : 
 

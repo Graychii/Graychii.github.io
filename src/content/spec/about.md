@@ -1,7 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+Still figuring out what to put here just skip it [Graychii](https://github.com/graychii).
 
-::github{repo="saicaca/fuwari"}
+::github{repo="graychii/graychii.github.io"}
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
